@@ -1,0 +1,9 @@
+/* TEAM */
+Frank Nugent - CEO and Founder - http://sunburycomputers.com.au - @SunburyComputers
+
+Ben O'Sullivan - Web Designer - http://bigbeno37.github.io - @bigbeno37
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery, Skeleton
+Software: Sublime Text, Gimp

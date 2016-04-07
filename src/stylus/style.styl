@@ -1,0 +1,100 @@
+// Import relevant stylus files...
+@import 'styles/introduction.styl'
+
+html, body{
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.centerText{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+    
+    h1{
+        font-size: 6em;
+        position: relative;
+        top: 15px;
+
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+
+    h1, h2{
+        color: white;
+    }
+
+    hr{
+        margin: auto;
+        width: 45em;
+    }
+
+    i{
+        color: white;
+        margin: 25px 35px;
+    }
+
+    i:hover{
+        color: grey;
+    }
+
+    .links{
+        -webkit-animation-delay: 2.5s;
+        animation-delay: 2.5s;
+
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+}
+
+.imageBackground{
+    height: 100%;
+    width: 100%;
+    background: url("https://dl.dropboxusercontent.com/s/1tkbyo4q9hzvw3u/photo-1437652010333-fbf2cd02a4f8.jpg");
+    background-size: cover;
+}
+
+.shade{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ----------------------------------- */
+
+.buttonGroup{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin: 25px;
+
+    button{
+        margin: 0 0 0 20px;
+        color: white;
+    }
+
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
