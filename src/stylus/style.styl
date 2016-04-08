@@ -288,12 +288,42 @@ html, body{
     }
 }
 
-.appear{
-    display: inline-block;
-}
 
-.disappear{
-    display: none;
+
+/* --------------------------------------------- */
+
+.projects{
+    height: 100%;
+    width: 100%;
+
+    z-index: 1000;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #e5e5e5;
+
+    .projectsCloseButton {
+        position: absolute;
+        right: 10px;
+        top: -10px;
+
+        font-size: 3em;
+    }
+
+    h1{
+        text-align: center;
+        position: relative;
+        top: 30px;
+    }
+
+    .project{
+        height: 75%;
+        width: 250px;
+        background-color: white;
+        border: 1px solid black;
+    }
 }
 
 /* --------------------------------------------- */

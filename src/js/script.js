@@ -14,11 +14,16 @@ function switchIcon(active) {
     }
 }
 
+/* -------------------------------------------------- */
+
 $(document).ready(function(){
     var active = false;
     var aboutMePopupIsVisible = false;
+    var projectsPopupIsVisible = false;
 
     $(".dropdownMenu").hide();
+    $(".projects").hide();
+    $(".aboutMe").hide();
     
     $(".hamburgerIcon").click(function(){
         active = switchIcon(active);
@@ -33,12 +38,12 @@ $(document).ready(function(){
             aboutMePopupIsVisible = false;
 
             setTimeout(function () {
-                $(".aboutMe").addClass("disappear");
+                $(".aboutMe").hide();
             }, 800);
         }
 
         else{
-            $(".aboutMe").addClass("fadeInUpBig appear").removeClass("disappear fadeOutDownBig");
+            $(".aboutMe").show().addClass("fadeInUpBig").removeClass("fadeOutDownBig");
 
             aboutMePopupIsVisible = true;
         }
@@ -51,14 +56,50 @@ $(document).ready(function(){
             aboutMePopupIsVisible = false;
 
             setTimeout(function () {
-                $(".aboutMe").addClass("disappear");
+                $(".aboutMe").hide();
             }, 800);
         }
 
         else{
-            $(".aboutMe").addClass("fadeInUpBig appear").removeClass("disappear fadeOutDownBig");
+            $(".aboutMe").show().addClass("fadeInUpBig").removeClass("fadeOutDownBig");
 
             aboutMePopupIsVisible = true;
+        }
+    });
+
+    $(".projectsButton").click(function(){
+        if (projectsPopupIsVisible){
+            $(".projects").addClass("zoomOut");
+
+            projectsPopupIsVisible = false;
+
+            setTimeout(function () {
+                $(".projects").hide();
+            }, 800);
+        }
+
+        else{
+            $(".projects").show().addClass("zoomIn").removeClass("zoomOut");
+
+            projectsPopupIsVisible = true;
+        }
+    });
+
+    $(".projectsCloseButton").click(function(){
+        if (projectsPopupIsVisible){
+            $(".projects").addClass("zoomOut");
+
+            projectsPopupIsVisible = false;
+
+            setTimeout(function () {
+                $(".projects").hide();
+            }, 800);
+        }
+
+        else{
+            $(".projects").show().addClass("zoomIn").removeClass("zoomOut");
+
+            projectsPopupIsVisible = true;
         }
     });
 });
