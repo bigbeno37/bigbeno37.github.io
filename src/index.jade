@@ -15,16 +15,36 @@ html.no-js(lang="en")
     .imageBackground
       .shade
 
-    .buttonGroup.animated.fadeInRight
-        a(href="#")
-            button About Me
+    .mobileNavBar.animated.fadeInDown
+        .blogButton
+            a(href="https://bigbeno37.github.io/blog")
+                button Blog
 
-        a(href="http://bigbeno37.github.io/blog", target="_blank")
-            button Blog
+        .hamburgerIcon
+            i.fa.fa-bars
 
-    .humansTxt.animated.fadeInLeft
-        a(href="humans.txt", target="_blank")
-            img(src="dist/img/humanstxt.png")
+        .dropdownMenu
+            ul
+                a(href="#")
+                    li About Me
+                a(href="#")
+                    li My Projects
+                a(href="http://bigbeno37.bandcamp.com")
+                    li Bandcamp
+
+    .buttonGroups
+        .buttonGroupRight.animated.fadeInRight
+            a(href="#")
+                button About Me
+            a(href="#")
+                button Projects
+            a(href="http://bigbeno37.bandcamp.com", target="_blank")
+                button Bandcamp
+
+
+        .buttonGroupLeft.animated.fadeInLeft
+            a(href="http://bigbeno37.github.io/blog", target="_blank")
+                button Blog
 
     .centerTextBody
       .centerText

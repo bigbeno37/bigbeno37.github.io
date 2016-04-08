@@ -10,6 +10,79 @@ html, body{
     font-family: 'Roboto', sans-serif;
 }
 
+/* ------------------------------------------------ */
+
+.mobileNavBar{
+    +from-width(2){
+        display: none;
+    }
+
+    .blogButton{
+        position: absolute;
+        top: 12px;
+        left: 15px;
+
+        button{
+            color: white;
+        }
+    }
+
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+
+    background-color: #333333;
+    width: 100%;
+    height: 65px;
+    border: 1px solid #000000;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .hamburgerIcon{
+        position: absolute;
+        top: 8px;
+        right: 10px;
+
+        i{
+            color: white;
+
+            border: 2px solid white;
+            border-radius: 7px;
+            padding: 0 5px;
+            font-size: 2.75em;
+        }
+    }
+
+    .dropdownMenu{
+        width: 100%;
+        background-color: #646464;
+
+        position: relative;
+        top: 65px;
+
+        text-align: center;
+        padding: 10px 0 0 0;
+
+        ul, a, li, li:active, li:hover{
+            color: white;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        li{
+            padding: 0 0 10px 0;
+            border: 1px solid transparent;
+            border-bottom-color: #333333;
+        }
+    }
+}
+
+/* ------------------------------------------------ */
+
 .centerText{
     width: 100%;
     position: absolute;
@@ -20,16 +93,35 @@ html, body{
     text-align: center;
     
     h1{
-        font-size: 6em;
-        position: relative;
-        top: 25px;
+        +to-width(1){
+            font-size: 3em;
+
+            position: relative;
+            top: 20px;
+        }
+
+        +from-width(2){
+            font-size: 6em;
+            position: relative;
+            top: 25px;
+        }
 
         -webkit-animation-duration: 1.5s;
         animation-duration: 1.5s;
     }
     
     h2 {
-        font-size: 1.6em
+
+        +to-width(1){
+            font-size: 1.3em;
+
+            position: relative;
+            top: 5px;
+        }
+
+        +from-width(2){
+            font-size: 1.6em
+        }
 
         -webkit-animation-delay: 1.5s;
         animation-delay: 1.5s;
@@ -44,12 +136,28 @@ html, body{
 
     hr{
         margin: auto;
-        width: 45em;
+
+        +to-width(1){
+            width: 20em;
+        }
+
+        +from-width(2){
+            width: 45em;
+        }
     }
 
     i{
+
+        +to-width(1){
+            margin: 10px 15px;
+        }
+
+        +from-width(2){
+            margin: 25px 35px;
+        }
+
         color: white;
-        margin: 25px 35px;
+
     }
 
     i:hover{
@@ -68,7 +176,7 @@ html, body{
 .imageBackground{
     height: 100%;
     width: 100%;
-    background: url("https://dl.dropboxusercontent.com/s/1tkbyo4q9hzvw3u/photo-1437652010333-fbf2cd02a4f8.jpg");
+    background: url("/dist/img/photo-1437652010333-fbf2cd02a4f8.jpg");
     background-size: cover;
 }
 
@@ -79,36 +187,42 @@ html, body{
 }
 
 /* ----------------------------------- */
+.buttonGroups {
 
-.buttonGroup{
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    margin: 25px;
-
-    button{
-        margin: 0 0 0 20px;
-        color: white;
+    +to-width(1){
+        display: none;
     }
 
-    -webkit-animation-delay: 3.5s;
-    animation-delay: 3.5s;
+    .buttonGroupRight {
+        position: absolute;
+        top: 25px;
+        right: 25px;
 
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
+        button {
+            margin: 0 0 0 20px;
+            color: white;
+        }
 
-.humansTxt{
-    position: absolute;
-    top: 0;
-    left: 0;
+        -webkit-animation-delay: 3.5s;
+        animation-delay: 3.5s;
 
-    margin: 25px;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }
 
-    -webkit-animation-delay: 3.5s;
-    animation-delay: 3.5s;
+    .buttonGroupLeft {
+        position: absolute;
+        top: 25px;
+        left: 25px;
 
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+        button {
+            color: white;
+        }
+
+        -webkit-animation-delay: 3.5s;
+        animation-delay: 3.5s;
+
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }
 }
