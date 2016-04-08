@@ -16,6 +16,7 @@ function switchIcon(active) {
 
 $(document).ready(function(){
     var active = false;
+    var aboutMePopupIsVisible = false;
 
     $(".dropdownMenu").hide();
     
@@ -23,5 +24,41 @@ $(document).ready(function(){
         active = switchIcon(active);
 
         $(".dropdownMenu").slideToggle("slow", function(){});
+    });
+    
+    $(".aboutMeButton").click(function(){
+        if (aboutMePopupIsVisible){
+            $(".aboutMe").addClass("fadeOutDownBig");
+
+            aboutMePopupIsVisible = false;
+
+            setTimeout(function () {
+                $(".aboutMe").addClass("disappear");
+            }, 800);
+        }
+
+        else{
+            $(".aboutMe").addClass("fadeInUpBig appear").removeClass("disappear fadeOutDownBig");
+
+            aboutMePopupIsVisible = true;
+        }
+    });
+
+    $(".closeButton").click(function(){
+        if (aboutMePopupIsVisible){
+            $(".aboutMe").addClass("fadeOutDownBig");
+
+            aboutMePopupIsVisible = false;
+
+            setTimeout(function () {
+                $(".aboutMe").addClass("disappear");
+            }, 800);
+        }
+
+        else{
+            $(".aboutMe").addClass("fadeInUpBig appear").removeClass("disappear fadeOutDownBig");
+
+            aboutMePopupIsVisible = true;
+        }
     });
 });
