@@ -1,0 +1,46 @@
+.aboutMe{
+  width: 100%;
+  background-color: #e5e5e5;
+
+  padding: 20px;
+
+  z-index: 999;
+
+  .container {
+    width: 100%;
+    position: relative;
+
+    +to-width($breakpointMobile){
+      top: 20px;
+    }
+
+    +from-width($breakpointTablet){
+      top: 25px;
+      padding: 0 0 30px 0;
+    }
+
+    .description{
+      +to-width($breakpointMobile){
+        padding: 5px;
+      }
+    }
+
+    .profilePicture{
+      text-align: center;
+
+      img {
+
+        +to-width($breakpointMobile) {
+          width: 250px;
+        }
+
+        border: 3px solid #333333;
+        border-radius: 200px;
+      }
+    }
+  }
+
+  -webkit-box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.75);
+}

@@ -17,7 +17,7 @@ html.no-js(lang="en")
 
     .mobileNavBar.animated.fadeInDown
         .blogButton
-            a(href="https://bigbeno37.github.io/blog")
+            a(href="https://bigbeno37.github.io/blog", target="_blank")
                 button Blog
 
         .hamburgerIcon
@@ -25,18 +25,18 @@ html.no-js(lang="en")
 
         .dropdownMenu
             ul
-                a(href="#").aboutMeButton
+                a(href="#aboutMe").aboutMeButton
                     li About Me
-                a(href="#").projectsButton
+                a(href="#projects").projectsButton
                     li My Projects
-                a(href="http://bigbeno37.bandcamp.com")
+                a(href="http://bigbeno37.bandcamp.com", target="_blank")
                     li Bandcamp
 
     .buttonGroups
         .buttonGroupRight.animated.fadeInRight
-            a(href="#").aboutMeButton
+            a(href="#aboutMe").aboutMeButton
                 button About Me
-            a(href="#").projectsButton
+            a(href="#projects").projectsButton
                 button Projects
             a(href="http://bigbeno37.bandcamp.com", target="_blank")
                 button Bandcamp
@@ -71,28 +71,27 @@ html.no-js(lang="en")
               a(href="https://www.linkedin.com/in/ben-o-sullivan-81a5b1b9", target="_blank")
                 i.fa.fa-linkedin.fa-2x
 
-    .aboutMe.animated
-        .closeButton
-            a(href="#")
-                i.fa.fa-times
-        .profilePicture
-            img(src="dist/img/Profile Pic.jpeg")
-        .description
-            h1 Hi! I'm Ben.
-            p Ever since I was a young kid, I've always known that I wanted to be in the computer industry. Growing up, I tinkered and experimented with a wide variety of different games and software, until I discovered the concept of programming. At around 12, I began to learn Java so that I could begin modding the infamous Minecraft, and later moved onto Python and then into the world of Web Development. I love learning how to simplify build processes, and figuring out the best way to approach every problem so that I can get it done as quickly as possible.
-            p While I enjoy programming, I am also a big fan of music, and as such compose songs in my spare time. While I only consider it a hobby right now, it allows me to take a break from the world of technology, and leads me to explore my creative side.
+    .aboutMe#aboutMe
+        .container
+            .row
+                .four.columns
+                    .profilePicture
+                        img(src="dist/img/Profile Pic.jpeg")
+                .eight.columns
+                    .description
+                        h1.center Hi! I'm Ben.
+                        p.justified Ever since I was a young kid, I've always known that I wanted to be in the computer industry. Growing up, I tinkered and experimented with a wide variety of different games and software, until I discovered the concept of programming. At around 12, I began to learn Java so that I could begin modding the infamous Minecraft, and later moved onto Python and then into the world of Web Development. I love learning how to simplify build processes, and figuring out the best way to approach every problem so that I can get it done as quickly as possible.
+                        p.justified While I enjoy programming, I am also a big fan of music, and as such compose songs in my spare time. While I only consider it a hobby right now, it allows me to take a break from the world of technology, and leads me to explore my creative side.
 
-    .projects.animated
-        .projectsCloseButton
-            a(href="#")
-                i.fa.fa-times
+    .projectsBackground#projects
+        .shade
+            .projects
+                h1.center My Projects
 
-        h1 My Projects
-
-        .project
-            img(src="")
-            h1 Test Project
-            p This project used this and this and this
+                .project
+                    img(src="")
+                    h1 Test Project
+                    p This project used this and this and this
 
 
 

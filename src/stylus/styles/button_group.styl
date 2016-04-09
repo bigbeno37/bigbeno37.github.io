@@ -1,0 +1,39 @@
+.buttonGroups {
+
+  +to-width($breakpointMobile){
+    display: none;
+  }
+
+  .buttonGroupRight {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    button {
+      margin: 0 0 0 20px;
+      color: white;
+    }
+
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+
+  .buttonGroupLeft {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+
+    button {
+      color: white;
+    }
+
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+}
