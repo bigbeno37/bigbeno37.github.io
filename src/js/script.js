@@ -11,6 +11,10 @@ $('a[href*=#]:not([href=#])').click(function() {
             $('html,body').animate({
                 scrollTop: target.offset().top
             }, 1000);
+
+            active = switchIcon(active);
+            $(".dropdownMenu").slideToggle("slow", function(){});
+
             return false;
         }
     }
@@ -35,7 +39,7 @@ function switchIcon(active) {
 /* -------------------------------------------------- */
 
 $(document).ready(function(){
-    var active = false;
+    active = false;
 
     $(".dropdownMenu").hide();
     
