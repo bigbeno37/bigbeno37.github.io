@@ -2,12 +2,20 @@
   width: 100%;
   background-color: #e5e5e5;
 
+  +to-width($breakpointMobile){
+    padding: 0 0 20px 0;
+  }
+
+  +from-width($breakpointTablet){
+    padding: 20px;
+  }
+
   .container {
     width: 100%;
     position: relative;
 
     +to-width($breakpointMobile){
-      top: 20px;
+      top: 25px;
     }
 
     +from-width($breakpointTablet){
@@ -16,8 +24,12 @@
     }
 
     .description{
-      +to-width($breakpointMobile){
-        padding: 0 0 15px 0;
+      +between(400px, 549px){
+        padding: 20px 20px 0 20px;
+      }
+
+      +between(550px, 755px){
+        padding: 20px 20px 0 20px;
       }
     }
 
@@ -29,6 +41,8 @@
         +to-width($breakpointMobile) {
           width: 250px;
         }
+
+        margin: 0 0 10px 0;
 
         border: 3px solid #333333;
         border-radius: 200px;
