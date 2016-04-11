@@ -41,12 +41,7 @@ function switchIcon(active) {
 $(document).ready(function(){
     $(".imageBackground").backstretch("/dist/img/MountainSea.jpg");
     $(".projectsBackground").backstretch("/dist/img/Alley.jpg");
-
-    $(".buttonGroups").on("transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd", function(){
-        $(".imageBackground").backstretch("/dist/img/MountainSea.jpg");
-        $(".projectsBackground").backstretch("/dist/img/Alley.jpg");
-    });
-
+    
     active = false;
 
     $(".dropdownMenu").hide();
