@@ -121,12 +121,12 @@ html, body {
   color: gray;
 }
 
-.home {
+.home-container {
   flex: 1 1 auto;
-}
 
-.max-height {
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .inline-block {
@@ -144,7 +144,7 @@ html, body {
 }
 
 .navbar, .home-info .icons {
-  animation-delay: 1.9s;
+  animation-delay: 2s;
 
   animation-duration: 0.5s;
 }
