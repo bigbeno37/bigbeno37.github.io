@@ -1,7 +1,10 @@
-/* TEAM */
-Ben O'Sullivan - Web Designer - http://bigbeno37.github.io - @bigbeno37
+# humanstxt.org/
+# The humans responsible & technology colophon
 
-/* SITE */
-Standards: HTML5, CSS3
-Components: Modernizr, jQuery, Skeleton CSS, Gulp Boilerplate
-Software: Sublime Text, Gimp
+# TEAM
+    Ben O'Sullivan - Full Stack Developer - @bigbeno37
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    jQuery, Modernizr, Normalize.css
