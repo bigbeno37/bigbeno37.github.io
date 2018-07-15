@@ -133,19 +133,43 @@ html, body {
   display: inline-block;
 }
 
+.wait *,
+.wait *:before,
+.wait *:after {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
 .home-info h1 {
+  -webkit-animation-duration: 1.75s;
+  -moz-animation-duration: 1.75s;
+  -o-animation-duration: 1.75s;
   animation-duration: 1.75s;
 }
 
 .home-info h2 {
+  -webkit-animation-delay: 1.1s;
+  -moz-animation-delay: 1.1s;
+  -o-animation-delay: 1.1s;
   animation-delay: 1.1s;
 
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
   animation-duration: 1s;
 }
 
 .navbar, .home-info .icons {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
   animation-delay: 2s;
 
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
 
