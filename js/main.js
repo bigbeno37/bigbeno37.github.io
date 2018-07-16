@@ -1,4 +1,3 @@
-$(window).on("load", function() {
-  console.log("hello");
-  $(".wait").removeClass("wait");
-});
+// $(window).on('load', function() {
+//   $("body").removeClass("wait");
+// });
