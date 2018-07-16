@@ -91,13 +91,69 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Extra small devices (portrait phones, less than 576px)
+   No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .home-info h1 {
+    font-size: 48px;
+  }
+
+  .home-info h2 {
+    font-size: 20px;
+  }
+
+  .icons a {
+    font-size: 2em;
+
+    margin: 0 20px;
+  }
+
+  .about img {
+    margin: 0 0 20px 0;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .icons a {
+    font-size: 3.5em;
+
+    margin: 0 40px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .home-info h1 {
+    font-size: 96px;
+  }
+
+  .home-info h2 {
+    font-size: 32px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
 html, body {
   min-height: 100%;
   height: 100%;
 }
 
 .bg {
-  height: 100%;
+  height: 95%;
 
   background-image: url("../img/bg.png");
   background-size: cover;
@@ -178,18 +234,26 @@ nav {
 }
 
 .icons a {
-  font-size: 3.5em;
   color: white;
-
-  margin: 0 40px;
 }
 
 .icons a:hover {
   color: gray;
 }
 
+.container-fluid .container {
+  font-family: 'Roboto', sans-serif;
+}
 
+.about {
+  -webkit-box-shadow: -3px -25px 44px 6px rgba(0,0,0,1);
+  -moz-box-shadow: -3px -25px 44px 6px rgba(0,0,0,1);
+  box-shadow: -3px -25px 44px 6px rgba(0,0,0,1);
 
+  border-bottom: 5px solid gray;
+
+  padding: 20px 0;
+}
 
 
 
