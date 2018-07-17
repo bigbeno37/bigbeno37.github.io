@@ -21,8 +21,6 @@
 </head>
 
 <body>
-  <script src="js/DelayAnimations.js"></script>
-
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -62,15 +60,15 @@
 
         <div class="row">
           <div class="col">
-            <h2 class="text-center animated fadeInDown">Part time Learner, Part time Tinkerer, Full time Software Engineer</h2>
+            <h4 class="text-center animated fadeInDown">Part time Learner, Part time Tinkerer, Full time Software Engineer</h4>
           </div>
         </div>
 
         <div class="row">
           <div class="col icons text-center animated fadeIn">
-            <a href="https://github.com/bigbeno37"><i class="fa fa-github"></i></a>
-            <a href="https://twitter.com/bigbeno37"><i class="fa fa-twitter-square"></i></a>
-            <a href="https://www.linkedin.com/in/benosu/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/bigbeno37" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://twitter.com/bigbeno37" target="_blank"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/in/benosu/" target="_blank"><i class="fa fa-linkedin"></i></a>
           </div>
         </div>
       </div>
@@ -97,15 +95,59 @@
     </div>
   </div>
 
-  <div class="container-fluid" id="projects">
-    <div class="row rsb">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
+  <div class="bg-projects">
+    <div class="shade"></div>
+  </div>
 
-          </div>
-          <div class="col-md-4"><img src="img/rsb.png" alt="Reload, Shoot, Block!" class="img-fluid"></div>
-        </div>
+  <div class="container projects" id="projects">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center projects-title">Projects</h1>
+      </div>
+    </div>
+
+    <div class="row project">
+      <div class="col-md-8">
+        <h2>Reload, Shoot, Block!</h2>
+
+        <span class="badge badge-primary">Node JS</span>
+        <span class="badge badge-secondary">Express</span>
+        <span class="badge badge-success">Typescript</span>
+        <span class="badge badge-info">Websockets</span>
+        <br><br>
+
+        <p>Reload, Shoot, Block! is a browser based 1v1 game based on the traditional Rock, Paper, Scissors. Players can create a lobby by visiting the webpage and share the link with their
+        friends, where upon the friend loading the link both players will start battling it out! Architecturally, Reload, Shoot, Block! follows the client - server pattern, with the clients
+        communicating via JSON messages to the server using Websockets. To ensure correct format, both the server and the client utilise Typescript's interface system to ensure the object
+        being converted to a string (via JSON.stringify) contains the correct types.</p>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <img src="img/rsb.png" alt="Reload, Shoot, Block!" class="img-fluid">
+        <a href="https://reload-shoot-block.herokuapp.com" target="_blank" class="btn btn-success">Play</a><br>
+        <a href="https://github.com/bigbeno37/ReloadShootBlock" target="_blank" class="btn btn-info">Source</a>
+      </div>
+    </div>
+
+    <div class="row project bh">
+      <div class="col-md-4 text-center">
+        <img src="img/bh.png" alt="Binoctal Hexadecimal" class="img-fluid">
+        <a href="https://bigbeno37.github.io/Binoctal-Hexadecimal" target="_blank" class="btn btn-success">Play</a><br>
+        <a href="https://github.com/bigbeno37/Binoctal-Hexadecimal" target="_blank" class="btn btn-info">Source</a>
+      </div>
+
+      <div class="col-md-8">
+        <h2>Binoctal Hexadecimal</h2>
+
+        <span class="badge badge-secondary">HTML / CSS</span>
+        <span class="badge badge-success">Bootstrap</span>
+        <span class="badge badge-info">Javascript</span>
+        <br><br>
+
+        <p>Reload, Shoot, Block! is a browser based 1v1 game based on the traditional Rock, Paper, Scissors. Players can create a lobby by visiting the webpage and share the link with their
+          friends, where upon the friend loading the link both players will start battling it out! Architecturally, Reload, Shoot, Block! follows the client - server pattern, with the clients
+          communicating via JSON messages to the server using Websockets. To ensure correct format, both the server and the client utilise Typescript's interface system to ensure the object
+          being converted to a string (via JSON.stringify) contains the correct types.</p>
       </div>
     </div>
   </div>

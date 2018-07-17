@@ -100,7 +100,7 @@ textarea {
     font-size: 48px;
   }
 
-  .home-info h2 {
+  .home-info h4 {
     font-size: 20px;
   }
 
@@ -110,8 +110,9 @@ textarea {
     margin: 0 20px;
   }
 
-  .about img {
-    margin: 0 0 20px 0;
+  .project h2 {
+    margin: 20px 0 0 0;
+    text-align: center;
   }
 }
 
@@ -255,9 +256,6 @@ nav {
 
   padding: 20px 0;
 
-  position: relative;
-  bottom: 30px;
-
   background-color: white;
 }
 
@@ -273,8 +271,59 @@ nav {
 
 
 
+.bg-projects {
+  position: absolute;
+  width: 100%;
 
+  background-image: url("../img/projects-bg.png");
+  background-size: cover;
+}
 
+.project {
+  background-color: white;
+  z-index: 1;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  border-bottom: 6px solid gray;
+
+  padding: 20px;
+  margin: 0;
+}
+
+.project:not(:last-child) {
+  margin: 0 0 40px 0;
+}
+
+.project:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.project a {
+  margin: 20px 0 0 0;
+  font-size: 28px;
+}
+
+.project .btn-info {
+  font-size: 16px;
+}
+
+.projects-title {
+  margin: 40px 0;
+
+  color: white;
+
+  z-index: 0;
+}
+
+.bh {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
 
 
 
