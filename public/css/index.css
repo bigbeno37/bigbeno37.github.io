@@ -356,6 +356,10 @@ body {
         flex-direction: column;
     }
 
+    .about_me_triangle_pull_up {
+        margin-bottom: 35rem;
+    }
+
     #profile_picture_container {
         display: flex;
         justify-content: center;
